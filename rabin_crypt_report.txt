@@ -1,0 +1,15 @@
+Rabin coder
+n - open key, s - text (binary code)
+n=77
+input block size=6
+output block size=7
+s=10100
+===========================
+add 5 zero bits and 01 to S
+000000 110100 
+===========================
+block  1: s=0000000=   0    c=0000000=   0
+block  2: s=0110100=  52    c=0001001=   9
+===========================
+binary result
+00000000001001

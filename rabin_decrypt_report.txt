@@ -1,0 +1,26 @@
+Rabin decoder
+p,q - private key (p,q - prime and "p mod 4 = 3, q mod 4 = 3" 
+s - text (binary code)
+p=7
+q=11
+y_p=-3
+y_q=2
+open key: n=77
+input block size=7
+output block size=6
+s=00000000001001
+===========================
+add 0 zero bits to S
+0000000 0001001 
+===========================
+   block  1: m_p=0 m_q=0
+1: block  1: s=0000000=   0    c=000000=   0
+2: block  1: s=0000000=   0    c=001101=  77
+3: block  1: s=0000000=   0    c=000000=   0
+4: block  1: s=0000000=   0    c=001101=  77
+   block  2: m_p=4 m_q=3
+1: block  2: s=0001001=   9    c=011001=  25
+2: block  2: s=0001001=   9    c=110100=  52
+3: block  2: s=0001001=   9    c=000011=   3
+4: block  2: s=0001001=   9    c=001010=  74
+===========================
